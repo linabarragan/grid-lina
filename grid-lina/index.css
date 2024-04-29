@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color:#fff;
+    background-image:linear-gradient(135deg, transparent 0%, #fff 25%, #fff 75%, transparent 100%), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N89+7dfwYsQEhIiBEkzDgkFGDzAbIY2Cv4AACvrBgJjYNGfwAAAABJRU5ErkJggg==);
+  }
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(16,1fr);
+}
+
+h1{
+    text-align: center;
+}
+
+.br-15{
+    border-radius: 15px;
+}
+
+.bg-pink{
+    background-color: pink;
+}
+
+.bg-beige{
+    background-color: beige;
+}
+
+.acerca{
+    grid-column: 2/5;
+    grid-row: 2/4;
+}
+
+.habilidades{
+    grid-column: 2/5;
+    grid-row: 5/7;
+}
+
+.objetivos{
+    grid-column: 2/5;
+    grid-row: 8/10;
+}
+
+.valoresPrincipios{
+    grid-column: 2/5;
+    grid-row: 11/13;
+}
+
+.pasatiempos{
+    grid-column: 2/5;
+    grid-row: 14/16;
+}
+
+.foto{
+    grid-column: 6/10;
+    grid-row: 4/13;
+}
+
+.nombre{
+    grid-column: 6/10;
+    grid-row: 14/15;
+}
+
+.pasiones{
+    grid-column: 11/14;
+    grid-row: 2/4;
+}
+
+.educacionFormacion{
+    grid-column: 11/14;
+    grid-row: 5/7;
+}
+
+.proyectos{
+    grid-column: 11/14;
+    grid-row: 8/10;
+}
+
+.redesSociales{
+    grid-column: 11/14;
+    grid-row: 11/13;
+}
+
+.contacto{
+    grid-column: 11/14;
+    grid-row: 14/16;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .container{
+        display: grid;
+        grid-template-rows: repeat(17,1fr);
+    }
+    .foto{
+        grid-column: 8/14;
+        grid-row: 2/11;
+    }
+    .nombre{
+        grid-column: 8/14;
+        grid-row: 12/13;
+    }
+    .acerca{
+        grid-column: 2/7;
+        grid-row: 2/3;
+    }
+    .habilidades{
+        grid-column: 2/7;
+        grid-row: 4/5;
+    }
+    .objetivos{
+        grid-column: 2/7;
+        grid-row: 6/7;
+    }
+    .valoresPrincipios{
+        grid-column: 2/7;
+        grid-row: 8/9;
+    }
+    .pasatiempos{
+        grid-column: 2/7;
+        grid-row: 10/11;
+    }
+    .educacionFormacion{
+        grid-column: 2/7;
+        grid-row: 12/13;
+    }
+    .proyectos{
+        grid-column: 2/7;
+        grid-row: 14/15;
+    }
+    .redesSociales{
+        grid-column: 2/7;
+        grid-row: 16/17;
+    }
+    .pasiones{
+        grid-column: 8/14;
+        grid-row: 14/15;
+    }
+    .contacto{
+        grid-column: 8/14;
+        grid-row: 16/17;
+    }
+}
+
+@media (max-width: 430px){
+    h1{
+        font-size: small;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(28,1fr);
+    }
+    .nombre{
+        grid-column: 2/14;
+        grid-row: 2/3;
+    }
+    .foto{
+        grid-column: 4/12;
+        grid-row: 4/8;
+    }
+    .acerca{
+        grid-column: 2/14;
+        grid-row: 9/10;
+    }
+    .habilidades{
+        grid-column: 2/14;
+        grid-row: 11/12;
+    }
+    .objetivos{
+        grid-column: 2/14;
+        grid-row: 13/14;
+    }
+    .valoresPrincipios{
+        grid-column: 2/14;
+        grid-row: 15/16;
+    }
+    .pasatiempos{
+        grid-column: 2/14;
+        grid-row: 17/18;
+    }
+    .educacionFormacion{
+        grid-column: 2/14;
+        grid-row: 19/20;
+    }
+    .proyectos{
+        grid-column: 2/14;
+        grid-row: 21/22;
+    }
+    .pasiones{
+        grid-column: 2/14;
+        grid-row: 23/24;
+    }
+    .redesSociales{
+        grid-column: 2/14;
+        grid-row: 25/26;
+    }
+    .contacto{
+        grid-column: 2/14;
+        grid-row: 27/28;
+    }
+}
